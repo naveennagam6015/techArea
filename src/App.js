@@ -17,8 +17,8 @@ export default function App()
   return (
   
     <div className='con'>  
+      <p className='t-cntr'>Counter</p>
   <div className='counter'>
-
     <button className='btn' onClick={decrese}>-   </button>
     <div className='counter-output'>{counter} </div>
     <button className='btn' onClick={increse}>+</button>

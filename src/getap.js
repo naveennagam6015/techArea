@@ -16,24 +16,14 @@ function MyComponent() {
 
   const [data, setData] = useState('');
   useEffect(() => {
-    // fetch("https://www.thecolorapi.com/id?hex=441212")
     function getProductPriceJumbo(id) {
-        fetch("https://gorest.co.in/public/v1/todos" + id + "/", {
-           method: "GET",
-        })
+        fetch("https://gorest.co.in/public/v1/todos"  
+          //  method: "GET",
+        )
            .then((response) => response.json())
            .then((data) => {
                return data[0].id;
            });
          }
   }, []);}
-//   return (
-//    function getProductPriceJumbo(id) {
-//    fetch("https://---/test.php?id=" + id + "/", {
-//       method: "GET",
-//    })
-//       .then((response) => response.json())
-//       .then((data) => {
-//           return data[0].price;
-//       });
-//     }
+
